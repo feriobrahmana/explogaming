@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motor Paws</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hud" aria-label="Match status">
+        <div class="fighter fighter-left">
+          <span class="name">Red Panda</span>
+          <div class="meter"><span id="p1Health"></span></div>
+        </div>
+        <div class="center-status">
+          <span id="roundLabel">Round 1</span>
+          <strong id="timer">90</strong>
+        </div>
+        <div class="fighter fighter-right">
+          <span class="name">River Otter</span>
+          <div class="meter"><span id="p2Health"></span></div>
+        </div>
+      </section>
+
+      <canvas id="game" width="960" height="540" aria-label="Motor Paws game canvas"></canvas>
+
+      <section class="controls" aria-label="Keyboard controls">
+        <div>
+          <strong>Player 1</strong>
+          <span>WASD move</span>
+          <span>F jab</span>
+          <span>G kick</span>
+        </div>
+        <div>
+          <strong>Player 2</strong>
+          <span>Arrows move</span>
+          <span>K jab</span>
+          <span>L kick</span>
+        </div>
+        <button id="resetButton" type="button">Restart</button>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
